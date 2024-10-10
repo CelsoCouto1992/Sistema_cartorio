@@ -115,14 +115,14 @@ int main()
 	{
 		setlocale(LC_ALL, "Portuguese");//definindo a liguagem
 		
-		printf("## Cartório da EBAC ##\n\n");//inicio do menu
+		printf("## Cartório da Cidade ##\n\n");//inicio do menu
 		
 		
 		printf("Escolha a opção desejada do menu:\n\n");
-		printf("\n1-Registrar nomes\n");
-		printf("\n2-Consultar nomes\n");
-		printf("\n3-Deletar nomes\n\n");
-		printf("Esse software é de livre uso dos alunos\n");
+		printf("\t1 - Registrar nomes\n");
+		printf("\t2 - Consultar nomes\n");
+		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		
 		scanf("%d", &opcao);//armazenando a escolha do usuário
 		
@@ -140,6 +140,11 @@ int main()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema\n");
+			return 0;
 			break;
 								
 			default:
